@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    $(".bt_lateral").click(function(){
+        $("#opcion_web").toggle(500);
+    });
+    $("#revision").click(function(){
+        $("#opcion_revision").toggle(500);
+    });
+    $("#cryptography").click(function(){
+        $("#opcion_cryptography").toggle(500);
+    });
+    $("#custom").click(function(){
+        $("#opcion_custom").toggle(500);
+    });
+    $("#picture").click(function(){
+        $("#exit").toggle(200);
+    });
+    $(".bt_url").click(function(){
+        $("#iframe").load($(this).data("url"));
+    });
+});
